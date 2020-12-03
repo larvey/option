@@ -1,0 +1,34 @@
+{
+    "name": "larvey/option",
+    "license": "MIT",
+    "description": "Gelişmiş varlık yönetimi",
+    "authors": [
+        {
+            "name": "Olga Karagedik",
+            "email": "olgakaragedik@outlook.com",
+            "homepage": "https://larvey.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larvey\\Option\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Larvey\\Option\\ServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
