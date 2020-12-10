@@ -209,10 +209,14 @@ class OptionManager
 	public function update(string $key, $value, $autoload = null)
 	{
 		$key = trim($key);
+
 		if (empty($key)) {
 			return false;
 		}
 
+		/**
+		 * Korumalı seçenek adlarını değiştirmeyi engelleyin.
+		 */
 		$this->protectOption($key);
 
 		if (is_object($value)) {
@@ -240,7 +244,7 @@ class OptionManager
 				$autoload = 1;
 			}
 
-			return add_option($key, $value, '', $autoload);
+			return add_option($key, $value, $autoload);
 		}
 
 		$serialized_value = maybe_serialize($value);
