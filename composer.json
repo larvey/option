@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/database": "dev-master"
+        "illuminate/database": "^8.12"
     },
     "autoload": {
         "psr-4": {
