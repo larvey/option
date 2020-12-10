@@ -20,7 +20,7 @@ class ServiceProvider extends ServiceProviderBase
 
         $this->app->singleton('option', function ($app) {
             $connection = $app['db']->connection(config('setting.database.connection'));
-            $table = config('setting.database.table');
+            $table = config('option.database.table');
 
             return new OptionManager($connection, $table);
         });

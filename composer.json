@@ -2,6 +2,7 @@
     "name": "larvey/option",
     "license": "MIT",
     "description": "Gelişmiş varlık yönetimi",
+    "homepage": "https://larvey.com",
     "authors": [
         {
             "name": "Olga Karagedik",
@@ -11,7 +12,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.1"
+        "php": "^7.3|^8.0",
+        "illuminate/database": "dev-master"
     },
     "autoload": {
         "psr-4": {
