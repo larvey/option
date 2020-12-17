@@ -214,6 +214,10 @@ class OptionManager
 			return false;
 		}
 
+		if ($value === null) {
+			$value = '';
+		}
+
 		/**
 		 * Korumalı seçenek adlarını değiştirmeyi engelleyin.
 		 */
